@@ -1,0 +1,26 @@
+.button {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .8em 2em;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+
+
+  &__primary {
+    @extend .button;
+    color: $white;
+    background: $color-primary;
+  }
+  &__secondary {
+    @extend .button;
+    color: $black;
+    background: $white;
+  }
+}

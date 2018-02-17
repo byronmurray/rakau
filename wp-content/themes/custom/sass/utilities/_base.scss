@@ -1,0 +1,73 @@
+body {
+  font-family:  'Merriweather', serif;
+  color: $text-color-primary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.lead {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  &__feature {
+    @extend .title;
+    color: $white;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    font-size: 5em;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  &__main {
+    @extend .title;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 4em;
+    margin: 0;
+    &-white {
+      @extend .title__main;
+      color: $white;
+    }
+  }
+  &__tag {
+    @extend .title;
+    color: $color-primary;
+    font-size: 2em;
+    margin: 0;
+  }
+  &__quote {
+    @extend .title;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    color: $white;
+    font-size: 3em;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+  }
+}
+
+.gutter {
+  @extend .text-center;
+  border: 1px solid black;
+  // height: 50vh;
+  padding: $gutter 2.5%;
+}
+
+.text-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

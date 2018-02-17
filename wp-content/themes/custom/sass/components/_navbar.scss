@@ -1,0 +1,45 @@
+.navbar {
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  width: 100%;
+  &__content {
+    @extend .text-center;
+    max-width: $content-width-lg;
+    display: flex;
+  }
+  &__brand {
+    padding: 3px 0;
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-family-primary;
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+.menu-main-menu-container {
+  margin-left: auto;
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    padding: 15px 18px;
+    display: inline-block;
+    color: $white;
+    transition: .3s;
+    text-transform: uppercase;
+    font-family: $font-family-primary;
+    margin: 0px -2px;
+
+    &:hover {
+      background: $black;
+    }
+
+  }
+}

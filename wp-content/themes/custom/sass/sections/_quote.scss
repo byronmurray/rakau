@@ -1,0 +1,11 @@
+.quote {
+  padding: 10em 2.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &__container {
+    @extend .text-center;
+    max-width: $content-width;
+  }
+}

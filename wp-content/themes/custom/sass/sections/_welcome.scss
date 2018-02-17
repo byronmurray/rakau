@@ -1,0 +1,6 @@
+.welcome {
+  &__content {
+    @extend .text-center;
+    max-width: $content-width;
+  }
+}

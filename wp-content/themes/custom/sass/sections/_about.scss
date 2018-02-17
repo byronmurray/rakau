@@ -1,0 +1,19 @@
+.about {
+  &__container {
+    display: flex;
+    min-height: 50vh;
+  }
+  &__image {
+    flex: 1;
+  }
+  &__content {
+    flex: 2;
+  }
+  &__content {
+    display: flex;
+    &-wrap {
+      margin: auto;
+      padding: 2.5%
+    }
+  }
+}
