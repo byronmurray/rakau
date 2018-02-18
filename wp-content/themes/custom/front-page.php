@@ -8,6 +8,7 @@
 <?php get_template_part( 'includes/about' ) ?>
 <?php get_template_part( 'includes/quote' ) ?>
 <?php get_template_part( 'includes/reviews' ) ?>
+<?php get_template_part( 'includes/qualifications' ) ?>
 <?php get_template_part( 'includes/contact' ) ?>
 
 

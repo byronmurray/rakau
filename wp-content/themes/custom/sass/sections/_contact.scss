@@ -1,1 +1,52 @@
+.contact {
+  &__container {
+    margin-top: $gutter-sm;
+    display: flex;
+    max-width: $content-width-lg;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__form {
+    flex: 2;
+    text-align: left;
+  }
+  &__details {
+    flex: 1;
+    text-align: left;
+    padding: 0 2.5%;
+  }
 
+}
+
+
+
+input,
+textarea
+{
+  background: #fff;
+  color: #525865;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.5;
+  outline: none;
+  padding: 0.5em 1.5em 0.5em;
+  transition: .2s ease-out;
+  @media (min-width: 991px) {
+    width: 80%;
+  }
+}
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.wpcf7-submit {
+  width: unset;
+  cursor: pointer;
+}

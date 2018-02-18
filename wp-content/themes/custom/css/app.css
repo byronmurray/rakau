@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: 'Merriweather', serif;
-  color: #000; }
+  color: #666; }
 
 h1,
 h2,
@@ -16,7 +16,7 @@ img {
   font-size: 1.3em;
   line-height: 1.5; }
 
-.title, .title__feature, .title__main, .title__main-white, .title__tag, .title__quote {
+.title, .title__feature, .title__main, .title__main-white, .title__tag, .title__tag-white, .title__quote {
   font-family: 'Oswald', sans-serif;
   font-weight: 700; }
   .title__feature {
@@ -31,11 +31,15 @@ img {
     font-size: 4em;
     margin: 0; }
     .title__main-white {
-      color: #fff; }
-  .title__tag {
+      color: #fff;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
+  .title__tag, .title__tag-white {
     color: #000;
     font-size: 2em;
     margin: 0; }
+    .title__tag-white {
+      color: #fff;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
   .title__quote {
     text-transform: uppercase;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
@@ -45,7 +49,6 @@ img {
     margin-bottom: 1em; }
 
 .gutter {
-  border: 1px solid black;
   padding: 5em 2.5%; }
 
 .text-center, .gutter, .navbar__content, .cover__content, .welcome__content, .quote__container {
@@ -3415,7 +3418,7 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 90vh; }
+  height: 100vh; }
   .cover__content {
     max-width: 960px;
     margin: auto; }
@@ -3442,11 +3445,12 @@ html {
 
 .about__container {
   display: flex;
-  min-height: 50vh; }
+  min-height: 50vh;
+  margin-top: 3em; }
 .about__image {
   flex: 1; }
 .about__content {
-  flex: 2; }
+  flex: 1; }
 .about__content {
   display: flex; }
   .about__content-wrap {
@@ -3454,21 +3458,12 @@ html {
     padding: 2.5%; }
 
 .reviews {
-  background: #000; }
+  background: #fff; }
+  .reviews__slider {
+    margin-top: 3em; }
   .reviews__item {
-    display: flex !important;
-    min-height: 50vh; }
-  .reviews__image {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .reviews__content {
-    color: #fff;
-    flex: 1;
-    margin: auto; }
-    .reviews__content-wrap {
-      padding: 2.5%; }
+    padding: 0 20px;
+    border-right: 1px solid #666; }
 
 .quote {
   padding: 10em 2.5%;
@@ -3478,5 +3473,70 @@ html {
   background-attachment: fixed; }
   .quote__container {
     max-width: 960px; }
+
+.qualifications {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://rakau.app/wp-content/uploads/2018/02/sample3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff !important; }
+  .qualifications .fa {
+    font-size: 4em;
+    margin-bottom: .35em; }
+  .qualifications__container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around; }
+  .qualifications__list {
+    margin: 0;
+    list-style: none; }
+    .qualifications__list li {
+      padding: 3px 0;
+      font-weight: bold;
+      font-size: 1.1em; }
+
+.contact__container {
+  margin-top: 3em;
+  display: flex;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+.contact__form {
+  flex: 2;
+  text-align: left; }
+.contact__details {
+  flex: 1;
+  text-align: left;
+  padding: 0 2.5%; }
+
+input,
+textarea {
+  background: #fff;
+  color: #525865;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.5;
+  outline: none;
+  padding: 0.5em 1.5em 0.5em;
+  transition: .2s ease-out; }
+  @media (min-width: 991px) {
+    input,
+    textarea {
+      width: 80%; } }
+
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02); }
+
+input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2); }
+
+.wpcf7-submit {
+  width: unset;
+  cursor: pointer; }
 
 /*# sourceMappingURL=app.css.map */

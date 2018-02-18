@@ -1,0 +1,26 @@
+.qualifications {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://rakau.app/wp-content/uploads/2018/02/sample3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $white !important;
+  .fa {
+    font-size: 4em;
+    margin-bottom: .35em;
+  }
+
+  &__container {
+    margin-top: $gutter-sm;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__list {
+    margin: 0;
+    list-style: none;
+    li {
+      padding: 3px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+}

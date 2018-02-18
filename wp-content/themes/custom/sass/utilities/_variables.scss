@@ -6,17 +6,19 @@
 
 $white: #fff;
 $black: #000;
+$grey: #666;
 
 $color-primary: $black;
 $color-secondary: $white;
 
 //== Text Colours
-$text-color-primary: $color-primary;
+$text-color-primary: $grey;
 $text-color-secondary: $color-secondary;
 $text-color-header: $color-primary;
 
 
 $gutter: 5em;
+$gutter-sm: 3em;
 
 //== Background Colours
 $background-primary: $color-primary;

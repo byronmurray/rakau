@@ -40,6 +40,7 @@ img {
     &-white {
       @extend .title__main;
       color: $white;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     }
   }
   &__tag {
@@ -47,6 +48,11 @@ img {
     color: $color-primary;
     font-size: 2em;
     margin: 0;
+    &-white {
+      @extend .title__tag;
+      color: $white;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    }
   }
   &__quote {
     @extend .title;
@@ -61,8 +67,6 @@ img {
 
 .gutter {
   @extend .text-center;
-  border: 1px solid black;
-  // height: 50vh;
   padding: $gutter 2.5%;
 }
 

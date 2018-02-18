@@ -1,7 +1,7 @@
 <section class="services section">
   <?php $args = array(
          'post_type' => 'post',
-         'posts_per_page' => 1
+         'posts_per_page' => 2
        );
   $services = new WP_Query($args);
 

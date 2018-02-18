@@ -1,4 +1,5 @@
-<section class="reviews section">
+<section class="reviews gutter">
+  <h2 class="title__main text-center">What our clients are saying</h2>
   <?php $args = array(
          'post_type' => 'post',
          'posts_per_page' => -1
@@ -11,16 +12,19 @@
       <?php while($reviews->have_posts()): $reviews->the_post(); ?>
         <div class="reviews__item">
 
-          <div class="reviews__image" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>)">
-
+          <h3>Tony Y. - Director/Founder</h3>
+          <a href="#">Link to clients webpage/fb</a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
           </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-          <div class="reviews__content">
-            <div class="reviews__content-wrap">
-              <?php the_title() ?>
-              <p><?php echo get_the_content() ?></p>
-              <a class="button__secondary" href="#">Contact Us</a>
-            </div>
+          <div class="date">
+            December 2017
           </div>
 
 
@@ -37,18 +41,33 @@
 
     <!-- move this to extenal file -->
     <script type="text/javascript">
-      jQuery(document).ready(function(){
-        jQuery('.reviews__slider').slick({
-          slidesToShow: 4,
-          fade: true,
-          accessibility: true,
-          arrows: true,
-          speed: 2000,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 4000,
-        });
-      });
-    </script>
+       jQuery(document).ready(function(){
+         jQuery('.reviews__slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+           {
+               breakpoint: 980, // tablet breakpoint
+               settings: {
+                   autoplaySpeed: 3000,
+                   slidesToShow: 2,
+                   slidesToScroll: 2
+               }
+           },
+           {
+               breakpoint: 480, // mobile breakpoint
+               settings: {
+                   autoplaySpeed: 3000,
+                   slidesToShow: 1,
+                   slidesToScroll: 1
+               }
+           }
+       ]
+         });
+       });
+     </script>
 
 </section>

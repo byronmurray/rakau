@@ -2,12 +2,13 @@
   &__container {
     display: flex;
     min-height: 50vh;
+    margin-top: $gutter-sm;
   }
   &__image {
     flex: 1;
   }
   &__content {
-    flex: 2;
+    flex: 1;
   }
   &__content {
     display: flex;

@@ -1,21 +1,19 @@
 .reviews {
-  background: $black;
+  background: $white;
+  &__slider {
+    margin-top: $gutter-sm;
+  }
   &__item {
-    display: flex !important;
-    min-height: 50vh;
+    padding: 0 20px;
+    border-right: 1px solid #666;
   }
   &__image {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
   }
   &__content {
-    color: $white;
-    flex: 1;
-    margin: auto;
+
     &-wrap {
-      padding: 2.5%;
+
     }
   }
 }
