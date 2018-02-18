@@ -1,4 +1,5 @@
 .about {
+  
   &__container {
     display: flex;
     min-height: 50vh;
@@ -6,6 +7,11 @@
   }
   &__image {
     flex: 1;
+    background-image: url(../images/background/bg12.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
   }
   &__content {
     flex: 1;

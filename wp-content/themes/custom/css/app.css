@@ -51,7 +51,7 @@ img {
 .gutter {
   padding: 5em 2.5%; }
 
-.text-center, .gutter, .navbar__content, .cover__content, .welcome__content, .quote__container {
+.text-center, .gutter, .navbar__content, .cover__content, .welcome__content, .services__navbar, .quote__container {
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
@@ -3434,7 +3434,18 @@ html {
   max-width: 960px; }
 
 .services {
-  background: #000; }
+  background: #000;
+  position: relative; }
+  .services__navbar {
+    background: #fff;
+    padding: 1em 0; }
+    .services__navbar li {
+      display: inline-block;
+      padding: 0 15px; }
+    .services__navbar a {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #666; }
   .services__item {
     display: flex !important;
     min-height: 50vh; }
@@ -3446,16 +3457,38 @@ html {
   .services__content {
     color: #fff;
     flex: 1;
-    margin: auto; }
+    display: flex; }
+    .services__content:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.4;
+      background-image: url(../images/logo/logo-white.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
     .services__content-wrap {
-      padding: 2.5%; }
+      padding: 2.5%;
+      margin: auto;
+      z-index: 99999; }
+  .services__link {
+    margin-top: 40px; }
 
 .about__container {
   display: flex;
   min-height: 50vh;
   margin-top: 3em; }
 .about__image {
-  flex: 1; }
+  flex: 1;
+  background-image: url(../images/background/bg12.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 .about__content {
   flex: 1; }
 .about__content {
@@ -3474,6 +3507,7 @@ html {
 
 .quote {
   padding: 10em 2.5%;
+  background-image: url(../images/background/bg15.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3482,7 +3516,7 @@ html {
     max-width: 960px; }
 
 .qualifications {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://rakau.app/wp-content/uploads/2018/02/sample3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/background/bg6.jpeg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

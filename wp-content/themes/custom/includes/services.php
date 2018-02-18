@@ -1,7 +1,16 @@
 <section class="services section">
+  <div class="services__navbar">
+    <ul>
+      <li><a href="#">service 1</a></li>
+      <li><a href="#">service 2</a></li>
+      <li><a href="#">service 3</a></li>
+      <li><a href="#">service 4</a></li>
+      <li><a href="#">service 5</a></li>
+    </ul>
+  </div>
   <?php $args = array(
          'post_type' => 'post',
-         'posts_per_page' => 2
+         'posts_per_page' => 1
        );
   $services = new WP_Query($args);
 
@@ -17,9 +26,11 @@
 
           <div class="services__content">
             <div class="services__content-wrap">
-              <?php the_title() ?>
+              <h2 class="title__main-white"><?php the_title() ?></h2>
               <p><?php echo get_the_content() ?></p>
-              <a class="button__secondary" href="#">Contact Us</a>
+              <div class="services__link">
+                <a class="button__secondary" href="#">Contact Us</a>
+              </div>
             </div>
           </div>
 

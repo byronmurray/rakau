@@ -5,7 +5,7 @@
 
   <div class="about__container">
 
-    <div class="about__image" style="background-image: url(http://rakau.app/wp-content/uploads/2018/02/sample3.jpg)">
+    <div class="about__image">
     </div>
 
     <div class="about__content">

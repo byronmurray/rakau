@@ -12,6 +12,7 @@ have to work out heights for slider.
 Have a limit for text.
 Services tab links words underline to section/slide
 Tidy up this section
+fade logo into service text.
 
 Contact us_______
 icons for contact details.
