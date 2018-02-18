@@ -3391,6 +3391,13 @@ html {
     .menu-main-menu-container a:hover {
       background: #000; }
 
+.sticky {
+  position: fixed;
+  background: black;
+  z-index: 9999;
+  border-bottom: 1px solid #fff3;
+  transition: all 2s; }
+
 .button, .button__primary, .button__secondary {
   font-weight: 400;
   text-align: center;
