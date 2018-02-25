@@ -1,11 +1,28 @@
 .navbar {
-  background: rgba(0,0,0,.6);
-  position: absolute;
+  background: rgba(0,0,0,1);
+  position: relative;
   width: 100%;
+  padding: 0 2.5%;
+  min-height: 66px;
+  @media (min-width: 768px) {
+    #menu_toggle {
+      display: none;
+    }
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    min-height: auto;
+  }
+
   &__content {
     @extend .text-center;
     max-width: $content-width-lg;
+
     display: flex;
+    flex-direction: column;
+    @media (min-width: 991px) {
+
+      flex-direction: row;
+    }
   }
   &__brand {
     padding: 3px 0;
@@ -16,16 +33,65 @@
     font-size: 2em;
     font-weight: bold;
   }
+  &__icon {
+    background: transparent;
+    position: absolute;
+    top: 32px;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #333;
+  }
+  &__hamburger {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0,0,0, .2);
+    transition: .5s;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0, .2);
+      transition: .5s;
+    }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+     top: 10px;
+   }
+  }
 }
 
 .menu-main-menu-container {
-  margin-left: auto;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+  @media (min-width: 991px) {
+    margin-left: auto;
+  }
   ul {
     list-style: none;
     margin: 0;
+    padding: 20px 12px;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
   li {
-    display: inline-block;
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
   }
   a {
     text-decoration: none;
@@ -36,9 +102,14 @@
     text-transform: uppercase;
     font-family: $font-family-primary;
     margin: 0px -2px;
+    width: 100%;
+    @media (min-width: 768px) {
+      width: unset;
+    }
 
     &:hover {
-      background: $black;
+      background: $white;
+      color: $black;
     }
 
   }
@@ -50,4 +121,45 @@
   z-index: 9999;
   border-bottom: 1px solid #fff3;
   transition: all 2s;
+}
+
+
+
+
+
+
+
+.menu-show {
+  display: block;
+}
+
+
+
+.navbar__icon.active .navbar__hamburger {
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.navbar__icon.active .navbar__hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.navbar__icon.active .navbar__hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+
+.menu-show {
+  left: 0;
+  width: 100%;
+}
+
+.navbar.menu-show {
+  position: relative;
+}
+
+.navbar__background.menu-show {
+  position: relative;
 }

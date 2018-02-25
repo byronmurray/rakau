@@ -1,6 +1,6 @@
 Navbar__________
 Navbar animates drop in from top sticky
-Navbar position: fixed on scroll
+
 
 cover__________
 Cut logo up

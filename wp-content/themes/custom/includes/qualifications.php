@@ -1,6 +1,6 @@
-<section class="qualifications gutter">
-  <h2 class="title__main-white text-center">Why choose us?</h2>
+<section id="qualifications" class="qualifications gutter">
   <h3 class="title__tag-white text-center">Fully qualified experienced arborist</h3>
+  <h2 class="title__main-white text-center">Why choose us?</h2>
 
   <div class="qualifications__container">
 

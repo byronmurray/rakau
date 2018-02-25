@@ -1,7 +1,10 @@
-<section class="about gutter">
+<section id="about" class="about gutter">
 
-  <h2 class="title__main">About us</h2>
   <h3 class="title__tag">The company and management</h3>
+  <h2 class="title__main">About us</h2>
+  <?php get_template_part( 'includes/divider' ) ?>
+
+
 
   <div class="about__container">
 

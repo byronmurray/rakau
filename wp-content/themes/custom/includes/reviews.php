@@ -1,5 +1,9 @@
-<section class="reviews gutter">
-  <h2 class="title__main text-center">What our clients are saying</h2>
+<section id="reviews" class="reviews gutter">
+  
+  <h3 class="title__tag text-center">What our clients are saying</h3>
+  <h2 class="title__main text-center">Testimonials</h2>
+  <?php get_template_part( 'includes/divider' ) ?>
+
   <?php $args = array(
          'post_type' => 'post',
          'posts_per_page' => -1

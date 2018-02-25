@@ -17,6 +17,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  
   <?php wp_head(); ?>
 </head>
 
@@ -41,4 +43,7 @@
         ?>
 
   </div>
+  <a id="menu_toggle" class="navbar__icon" href="#">
+    <div class="navbar__hamburger"></div>
+  </a>
 </nav>
