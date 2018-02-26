@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body, html {
+  overflow-x: hidden; }
+
 body {
   font-family: 'Merriweather', serif;
   color: #666; }
@@ -39,7 +42,7 @@ img {
       font-size: 2em; }
   .title__tag, .title__tag-white {
     color: #666;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0;
     margin-top: 20px;
     font-family: "Condiment", cursive;
@@ -3515,6 +3518,16 @@ html {
 .navbar__background.menu-show {
   position: relative; }
 
+footer {
+  background: #000; }
+  footer .copyright {
+    text-align: right;
+    color: #fff;
+    padding: 20px;
+    margin-right: 40px; }
+    footer .copyright a {
+      color: #fff; }
+
 .button, .button__primary, .button__secondary {
   font-weight: 400;
   text-align: center;
@@ -3527,7 +3540,8 @@ html {
   line-height: 1.5;
   transition: color 0.45s ease-in-out;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-right: 1em; }
   .button__primary {
     color: #fff;
     background: #000; }
@@ -3602,7 +3616,9 @@ html {
     .services__content-wrap {
       padding: 2.5%;
       margin: auto;
-      z-index: 99999; }
+      z-index: 99999;
+      text-align: center;
+      width: 75%; }
   .services__link {
     margin-top: 40px; }
 
@@ -3612,7 +3628,7 @@ html {
   margin-top: 3em; }
 .about__image {
   flex: 1;
-  background-image: url(../images/background/bg12.jpeg);
+  background-image: url(../images/about.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -3628,9 +3644,13 @@ html {
   background: #fff; }
   .reviews__slider {
     margin-top: 3em; }
+  .reviews .slick-list {
+    display: flex; }
   .reviews__item {
     padding: 0 20px;
     border-right: 1px solid #666; }
+    .reviews__item:last-of-type {
+      border-right: none; }
 
 .quote {
   padding: 8em 2.5%;
@@ -3643,7 +3663,7 @@ html {
     max-width: 960px; }
 
 .qualifications {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/background/bg6.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/background/bg1.jpeg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

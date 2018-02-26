@@ -18,7 +18,9 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-  
+
+<link href="https://fonts.googleapis.com/css?family=Anton|Condiment|Dosis|Kaushan+Script|Lobster|Patua+One|Satisfy" rel="stylesheet"> 
+
   <?php wp_head(); ?>
 </head>
 

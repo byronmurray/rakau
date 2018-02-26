@@ -13,16 +13,17 @@
 
     <ul class="qualifications__list">
       <i class="fa fa-check-circle"></i>
-      <li>Site Supervision</li>
       <li>Close Working Zone (Tree Work)</li>
       <li>Pole Top Rescue</li>
+      <li>Site Supervision</li>
     </ul>
 
     <ul class="qualifications__list">
       <i class="fa fa-user-plus"></i>
+      <li>20+ Years Experience in the Industry</li>
       <li>Environment Awareness Training</li>
       <li>4WD Safety and Farm Bike Safety</li>
-      <li>20+ Years Experience in the Industry</li>
+
     </ul>
 
   </div>

@@ -1,5 +1,7 @@
 <footer>
-
+  <div class="copyright">
+    © <?php bloginfo('name') ?> <?php echo date('Y') ?>. Website by <a target="_blank" href="https://www.linkedin.com/in/byron-murray-769b84a9/">Byron Murray</a>
+  </div>
 </footer>
 
 
