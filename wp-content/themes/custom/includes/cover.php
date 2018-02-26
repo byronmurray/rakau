@@ -8,8 +8,8 @@
 
     <div class="cover__tagline">
       <h1 data-position="bottom" data-offset="160" class="notViewed animBlock title__feature">Emerson Kopae <br>Tree Specialist</h1>
-      <a data-position="bottom" data-offset="260" class="notViewed animBlock button__primary" href="#services">Services</a>
-      <a data-position="bottom" data-offset="260" class="notViewed animBlock button__secondary" href="#contact">Contact</a>
+      <a data-position="bottom" data-offset="260" class="notViewed animBlock button__primary" href="#services">Our Services</a>
+      <a data-position="bottom" data-offset="260" class="notViewed animBlock button__secondary" href="#contact">Contact Us</a>
     </div>
 
   </div>

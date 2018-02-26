@@ -58,11 +58,12 @@ img {
   &__tag {
     @extend .title;
     color: $text-color-primary;
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 0;
     margin-top: 20px;
     font-family: $font-family-tags;
     font-weight: 100;
+    font-style: italic;
     &-white {
       @extend .title__tag;
       color: $white;
