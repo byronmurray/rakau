@@ -1,7 +1,7 @@
 <section id="services" class="services">
 
-  <h3 class="title__tag text-center">No tree too big or too small leave it to us</h3>
-  <h2 class="title__main text-center">Our Services</h2>
+  <h3 data-position="left" data-offset="160" class="notViewed animBlock title__tag text-center">No tree too big or too small leave it to us</h3>
+  <h2 data-position="right" data-offset="160" class="notViewed animBlock title__main text-center">Our Services</h2>
   <?php get_template_part( 'includes/divider' ) ?>
 
   <div class="services__navbar">
@@ -9,7 +9,8 @@
   </div>
   <?php $args = array(
          'post_type' => 'services',
-         'posts_per_page' => -1
+         'posts_per_page' => -1,
+         'order' => 'ASC'
        );
   $services = new WP_Query($args);
 

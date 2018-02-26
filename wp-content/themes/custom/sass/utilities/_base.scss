@@ -62,8 +62,7 @@ img {
     margin: 0;
     margin-top: 20px;
     font-family: $font-family-tags;
-    font-weight: inherit;
-    font-style: italic;
+    font-weight: 100;
     &-white {
       @extend .title__tag;
       color: $white;

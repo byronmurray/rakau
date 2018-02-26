@@ -12,4 +12,13 @@
 
 <?php wp_footer(); ?>
 </body>
+
+<div class="back-to-top" id="back-to-top">
+  <a href="#" title="back to top"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<div class="phone">
+  <a href="tel:0275900010" title="Call us 0275-900-010"><i class="fa fa-phone"></i></a>
+</div>
+
 </html>

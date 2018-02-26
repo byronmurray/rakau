@@ -1,7 +1,7 @@
 <section id="about" class="about gutter">
 
-  <h3 class="title__tag">The company and management</h3>
-  <h2 class="title__main">About us</h2>
+  <h3 data-position="left" data-offset="160" class="notViewed animBlock title__tag">The company and management</h3>
+  <h2 data-position="right" data-offset="160" class="notViewed animBlock title__main">About us</h2>
   <?php get_template_part( 'includes/divider' ) ?>
 
 
