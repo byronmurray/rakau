@@ -20,8 +20,12 @@ img {
 }
 
 .lead {
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 1.5;
+  @media (min-width: 991px) {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
 }
 
 .title {
@@ -31,16 +35,28 @@ img {
     @extend .title;
     color: $white;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    font-size: 5em;
     text-transform: uppercase;
-    line-height: 1.2;
+    font-size: 2em;
+    line-height: 1.3em;
+    @media (min-width: 768px) {
+      font-size: 3.5em;
+      line-height: 1.2;
+    }
+    @media (min-width: 991px) {
+      font-size: 5em;
+      line-height: 1.2;
+    }
+
   }
   &__main {
     @extend .title;
     text-transform: uppercase;
     color: $black;
-    font-size: 4em;
     margin: 0;
+    font-size: 3em;
+    @media (min-width: 991px) {
+      font-size: 4em;
+    }
     &-white {
       @extend .title__main;
       color: $white;
@@ -48,7 +64,12 @@ img {
     }
     &-small {
       @extend .title__main-white;
-      font-size: 3em;
+      font-size: 2em;
+      line-height: 1.2;
+      @media (min-width: 991px) {
+        font-size: 3em;
+      }
+
     }
     &-sm_black {
       @extend .title__main;
@@ -58,12 +79,15 @@ img {
   &__tag {
     @extend .title;
     color: $text-color-primary;
-    font-size: 1.6em;
     margin: 0;
     margin-top: 20px;
     font-family: $font-family-tags;
     font-weight: 100;
     font-style: italic;
+    font-size: 1.2em;
+    @media (min-width: 991px) {
+      font-size: 1.6em;
+    }
     &-white {
       @extend .title__tag;
       color: $white;
@@ -75,9 +99,12 @@ img {
     text-transform: uppercase;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     color: $white;
-    font-size: 3em;
-    line-height: 1.1em;
     margin-bottom: 1em;
+    font-size: 2em;
+    line-height: 1.2em;
+    @media (min-width: 991px) {
+      font-size: 3em;
+    }
   }
 }
 
@@ -99,10 +126,13 @@ img {
     border-top: 3px solid #d9d9d9;
     margin-top: 30px;
     margin-bottom: 60px;
-    width: 40%;
     margin-left: auto;
     margin-right: auto;
     max-width: 390px;
+    width: 80%;
+    @media (min-width: 991px) {
+      width: 40%;
+    }
     &-fa {
         position: absolute;
         top: -13px;

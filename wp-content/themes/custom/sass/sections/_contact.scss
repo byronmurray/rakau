@@ -2,19 +2,30 @@
   background: #f3f3f3;
   &__container {
     margin-top: $gutter-sm;
-    display: flex;
     max-width: $content-width-lg;
+
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 991px) {
+      display: flex;
+    }
   }
   &__form {
     flex: 2;
     text-align: left;
+    margin-bottom: 40px;
+    @media (min-width: 991px) {
+      margin-bottom: 0;
+    }
   }
   &__details {
     flex: 1;
     text-align: left;
-    padding: 0 2.5%;
+    @media (min-width: 991px) {
+      padding: 0 2.5%;
+    }
+
   }
   ul {
     margin: 0;
@@ -24,6 +35,10 @@
     list-style: none;
     font-size: 1.1em;
     padding-bottom: 5px;
+  }
+  .fa {
+    min-width: 20px;
+    text-align: center;
   }
 
 }

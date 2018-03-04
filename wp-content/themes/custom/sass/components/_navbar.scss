@@ -32,6 +32,12 @@
     font-family: $font-family-primary;
     font-size: 2em;
     font-weight: bold;
+    text-align: left;
+    margin-top: 4px;
+    @media (min-width: 768px) {
+      text-align: center;
+      margin-top: 0;
+    }
   }
   &__icon {
     background: transparent;

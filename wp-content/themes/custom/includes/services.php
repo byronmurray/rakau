@@ -18,14 +18,13 @@
 
       <div class="slider">
       <?php while($services->have_posts()): $services->the_post(); ?>
-        <div class="services__item" data-title="<?php the_title() ?>">
 
-          <div class="services__image" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>)">
+        <div class="services__item" data-title="<?php the_title() ?>" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(<?php echo get_the_post_thumbnail_url() ?>)">
 
-          </div>
+          <div class="services__image" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>)"></div>
 
           <div class="services__content">
-            <div class="services__content-wrap">
+            <div class="services__content-wrap" >
               <h2 class="title__main-small"><?php the_title() ?></h2>
               <p><?php echo  get_excerpt(400, 'content') ?></p>
               <div class="services__link">
@@ -33,6 +32,7 @@
               </div>
             </div>
           </div>
+
 
 
         </div>

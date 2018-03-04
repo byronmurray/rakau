@@ -33,7 +33,7 @@
 
 
 
-          <p><?php the_content() ?></p>
+          <div class="reviews__content"><?php the_content() ?></div>
 
 
 
@@ -52,28 +52,14 @@
     <script type="text/javascript">
        jQuery(document).ready(function(){
          jQuery('.reviews__slider').slick({
-            slidesToShow: 4,
+            slidesToShow: 1,
             slidesToScroll: 1,
+            // fade: true,
+            // speed: 1000,
             autoplay: true,
-            autoplaySpeed: 4000,
-            responsive: [
-               {
-                   breakpoint: 980, // tablet breakpoint
-                   settings: {
-                       autoplaySpeed: 3000,
-                       slidesToShow: 2,
-                       slidesToScroll: 2
-                   }
-               },
-               {
-                   breakpoint: 480, // mobile breakpoint
-                   settings: {
-                       autoplaySpeed: 3000,
-                       slidesToShow: 1,
-                       slidesToScroll: 1
-                   }
-               }
-           ]
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            autoplaySpeed: 6000,
          });
        });
      </script>

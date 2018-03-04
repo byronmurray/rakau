@@ -9,6 +9,7 @@
   <div class="about__container">
 
     <div class="about__image">
+      <img class="about__image-image" src="<?php echo get_template_directory_uri() ?>/images/background/background.png" alt="">
     </div>
 
     <div class="about__content">

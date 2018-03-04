@@ -1,17 +1,29 @@
 .about {
 
   &__container {
-    display: flex;
-    min-height: 50vh;
     margin-top: $gutter-sm;
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 991px) {
+      display: flex;
+      max-width: unset;
+      min-height: 500px;
+    }
   }
   &__image {
-    flex: 1;
     background-image: url(../images/about.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    flex: 1;
 
+    &-image {
+      @media (min-width: 991px) {
+        display: none;
+      }
+    }
   }
   &__content {
     flex: 1;

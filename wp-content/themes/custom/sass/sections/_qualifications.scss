@@ -5,14 +5,20 @@
   background-attachment: fixed;
   color: $white !important;
   .fa {
-    font-size: 4em;
+    font-size: 2.7em;
     margin-bottom: .35em;
+    @media (min-width: 991px) {
+      font-size: 3.5em;
+    }
   }
 
   &__container {
     margin-top: $gutter-sm;
-    display: flex;
-    justify-content: space-around;
+    @media (min-width: 991px) {
+      display: flex;
+      justify-content: space-around;
+    }
+
   }
   &__list {
     padding: 0;
@@ -20,7 +26,11 @@
     li {
       padding: 3px 0;
       font-weight: bold;
-      font-size: 1.1em;
+      font-size: 1em;
+      @media (min-width: 991px) {
+        font-size: 1.1em;
+      }
+
     }
   }
 }

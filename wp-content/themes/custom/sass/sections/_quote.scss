@@ -5,6 +5,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  @media (min-width: 768px) {
+    padding: 8em 5%;
+  }
   &__container {
     @extend .text-center;
     max-width: $content-width;

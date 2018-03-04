@@ -3,23 +3,19 @@
   &__slider {
     margin-top: $gutter-sm;
   }
-  .slick-list {
-    display: flex;
-  }
   &__item {
     padding: 0 20px;
-    border-right: 1px solid #666;
+
     &:last-of-type {
       border-right: none;
     }
   }
-  &__image {
-
-  }
   &__content {
-
-    &-wrap {
-
-    }
+    font-style: italic;
+    margin-top: 1em;
+    color: #838383;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
